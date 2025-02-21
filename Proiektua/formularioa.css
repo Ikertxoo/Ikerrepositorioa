@@ -1,14 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px beige;
+}
 .formulario-kontainerra{
+    margin: 0px;
     text-align: center;
     align-content: center;
     display: inline;
+    width: 450px;
     
 }
+.form-errenkada{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content: center;
+}
 
-button{
+/* button{
     width: 100%;
-}
+} */
 
-.izena{
-    
-}
+
+
