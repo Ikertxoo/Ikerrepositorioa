@@ -1,6 +1,14 @@
-main{
+.formulario-kontainerra{
     text-align: center;
     align-content: center;
     display: inline;
+    
+}
+
+button{
+    width: 100%;
+}
+
+.izena{
     
 }
