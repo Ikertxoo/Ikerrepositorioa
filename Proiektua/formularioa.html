@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formularioa.css">
+</head>
+<body>
+    <main class="formulario-kontainerra">
+        <form>
+          <div class="form-errenkada">
+            <label for="izena">Izen osoa:</label>
+            <input type="text" id="izena" name="izena" placeholder="Sartu zure izen osoa">
+          </div>
+    
+          <div class="form-errenkada">
+            <label for="Emaila">Emaila:</label>
+            <input type="email" id="posta" name="posta" placeholder="Sartu zure posta elektronikoa">
+          </div>
+    
+    
+          <div class="form-errenkada">
+            <label>Generoa:</label>
+            <div class="form-taldea">
+              <input type="radio" id="gizonezkoa" name="generoa" value="male">
+              <label for="gizonezkoa">Gizonezkoa</label>
+    
+              <input type="radio" id="emakumezkoa" name="generoa" value="emakumezkoa">
+              <label for="emakumezkoa">Emakumezkoa</label>
+    
+              <input type="radio" id="besteak" name="generoa" value="beste bat">
+              <label for="besteak">Beste bat</label>
+            </div>
+          </div>
+    
+          <div class="form-errenkada">
+            <label for="Estatua">Estatua:</label>
+            <select id="herrialdea" name="herrialdea">
+              <option value="">Aukeratu zure herrialdea</option>
+              <option value="Euskal Herria">Euskal Herria</option>
+              <option value="uk">Erresuma Batuak</option>
+              <option value="Frantzia">Frantzia</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+    
+          <div class="form-errenkada">
+            <button type="submit" class="submit-btn">Bidali</button>
+          </div>
+        </form>
+      </main>
+    
+</body>
+</html>
