@@ -1,7 +1,9 @@
 body{
     display: flex;
     justify-content: center;
-    box-shadow: 1px 1px beige;
+    box-shadow: 2px 2px grey;
+    width: 30%;
+    border-radius: 3px;
 }
 .formulario-kontainerra{
     margin: 0px;
