@@ -7,22 +7,23 @@ body{
 }
 .formulario-kontainerra{
     margin: 0px;
-    text-align: center;
-    align-content: center;
-    display: inline;
+    display: flex;
+    justify-content: right;
     width: 450px;
-    
 }
 .form-errenkada{
     display: flex;
     flex-direction: column;
     width: 450px;
-    justify-content: center;
+    justify-content: right;
 }
 
 /* button{
     width: 100%;
 } */
 
-
+.form-errenkada{
+    margin: 15px;
+    
+}
 
