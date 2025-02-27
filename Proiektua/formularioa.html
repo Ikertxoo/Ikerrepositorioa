@@ -70,7 +70,7 @@
           event.preventDefault();
 
           const Emaila = document.getElementById("emaila").value;
-          const emaitza = document,getElementById("onartu");
+          const emaitza = document.getElementById("onartu");
 
           if (Emaila.includes("@")) {
             emaitza.textContent = "Emaitza egokia da!";
@@ -78,6 +78,7 @@
           }
           else {
             emaitza.textContent = "Errorea: emailak '@' izan behar du"
+            emaitza.style.color = "red";
           }
         }
       </script>

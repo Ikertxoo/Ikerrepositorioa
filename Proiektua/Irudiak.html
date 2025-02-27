@@ -7,14 +7,56 @@
     <link rel="stylesheet" href="irudiak.css">
 </head>
 <body>
-    
-</body>
-</html>
-<nav>
+  <nav>
     <ul>
       <li><a href="Proiektua.html" style="text-decoration: none;">Pertsonalizatzailea</a></li>
       <li><a href="formularioa.html" style="text-decoration: none;">Formularioa</a></li>
       <li><a href="Irudiak.html" style="text-decoration: none;">Irudiak</a></li>
       <li><a href="iluna.html" style="text-decoration: none;">Modua</a></li>
     </ul>
-  </nav>
+  </nav>   
+</body>
+</html>
+
+<div class="kontainerra">
+  <div class="irudiak">
+      <p>Botoi magikoa: sortu eta aldatu irudiak</p>
+      <button onclick="aldatuIrudia()">Aldatu irudia!</button>
+      <div>
+          <img id="irudiNagusia" src="html.png" alt="Irudia">
+      </div>
+  </div>
+
+  <div class="irudiak">
+      <p>Irudia automatiko aldatzea</p>
+      <div>
+          <img id="irudiDinamikoa" src="proiektua" alt="Irudia">
+      </div>
+  </div>
+</div>
+
+<script>
+  const irudiLista = [
+      "java.png",
+      "html.png",
+      "css.png",
+      "Visual.png",
+      "html.png"
+  ];
+
+  let indizeNagusia = 0;
+  let indizeDinamikoa = 0;
+
+  function aldatuIrudia() {
+      indizeNagusia = (indizeNagusia + 1) % irudiLista.length;
+      document.getElementById("irudiNagusia").src = irudiLista[indizeNagusia];
+  }
+
+  function kargatuIrudiDinamikoa() {
+      indizeDinamikoa = (indizeDinamikoa + 1) % irudiLista.length;
+      document.getElementById("irudiDinamikoa").src = irudiLista[indizeDinamikoa];
+  }
+
+  setInterval(kargatuIrudiDinamikoa, 250);
+
+</script>
