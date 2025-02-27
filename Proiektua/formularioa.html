@@ -65,5 +65,21 @@
         </form>
       </main>
     
+      <script>
+        function konprobaketa(event) {
+          event.preventDefault();
+
+          const Emaila = document.getElementById("emaila").value;
+          const emaitza = document,getElementById("onartu");
+
+          if (Emaila.includes("@")) {
+            emaitza.textContent = "Emaitza egokia da!";
+            emaitza.style.color = "green";
+          }
+          else {
+            emaitza.textContent = "Errorea: emailak '@' izan behar du"
+          }
+        }
+      </script>
 </body>
 </html>
