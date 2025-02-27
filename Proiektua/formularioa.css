@@ -1,12 +1,4 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    box-shadow: 2px 2px grey;
-    width: 100vw;
-    border-radius: 3px;
-}
+
 .formulario-kontainerra{
     display: flex;
     justify-content: center;
@@ -26,7 +18,29 @@ body{
 
 
 .form-errenkada{
-    margin: 15px;
+    margin: 15px;   
+}
+
+nav{
+    text-align: center;
+    background-color: grey;
     
 }
 
+nav ul{
+    background: none;
+    color: white;
+    border: 0px;
+    font-size: large;
+    padding: 15px;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    padding: 15px;
+}

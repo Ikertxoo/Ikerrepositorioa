@@ -1,0 +1,50 @@
+body{
+  background-color: black;
+     
+ }
+ .formulario-kontainerra{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 450px;
+     box-shadow: 0px 2px 4px rgb(0,0,0,1) ;
+     border-radius: 3px;
+     padding: 20px;
+     color: aliceblue;
+ }
+ .form-errenkada{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     gap: 10px;
+ }
+ 
+ 
+ 
+ .form-errenkada{
+     margin: 15px;   
+ }
+ 
+ nav{
+     text-align: center;
+     background-color: grey;
+     
+ }
+ 
+ nav ul{
+     background: none;
+     color: white;
+     border: 0px;
+     font-size: large;
+     padding: 15px;
+     list-style: none;
+ }
+ 
+ li{
+     display: inline-block;
+ }
+ 
+ nav ul li a{
+     color: white;
+     padding: 15px;
+ }
