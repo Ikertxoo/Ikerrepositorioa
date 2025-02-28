@@ -25,3 +25,16 @@ nav ul li a{
 p{
     color: blue;
 }
+
+img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.kontainerra{
+     box-shadow: 0px 2px 4px rgb(0,0,0,1) ;
+    border-radius: 4px;
+     width: 50%;
+    
+}
