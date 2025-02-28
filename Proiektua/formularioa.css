@@ -9,7 +9,7 @@
     padding: 20px;
     
 }
-input:hover{
+input:focus{
     border-color: orange;
     outline-style: none;
 }

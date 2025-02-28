@@ -17,3 +17,44 @@
       </nav>
 </body>
 </html>
+<div class="kontainerra">
+  <div class="irudiak">
+      <p>Botoi magikoa: sortu eta aldatu irudiak</p>
+      <button onclick="aldatuIrudia()">Aldatu irudia!</button>
+      <div>
+          <img id="irudiNagusia" src="html.png" alt="Irudia">
+      </div>
+  </div>
+
+  <div class="irudiak">
+      <p style="color: aliceblue;">Irudia automatiko aldatzea</p>
+      <div>
+          <img id="irudiDinamikoa" src="proiektua" alt="Irudia">
+      </div>
+  </div>
+</div>
+
+<script>
+  const irudiLista = [
+      "java.png",
+      "html.png",
+      "css.png",
+      "html.png"
+  ];
+
+  let indizeNagusia = 0;
+  let indizeDinamikoa = 0;
+
+  function aldatuIrudia() {
+      indizeNagusia = (indizeNagusia + 1) % irudiLista.length;
+      document.getElementById("irudiNagusia").src = irudiLista[indizeNagusia];
+  }
+
+  function kargatuIrudiDinamikoa() {
+      indizeDinamikoa = (indizeDinamikoa + 1) % irudiLista.length;
+      document.getElementById("irudiDinamikoa").src = irudiLista[indizeDinamikoa];
+  }
+
+  setInterval(kargatuIrudiDinamikoa, 250);
+
+</script>
